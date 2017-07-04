@@ -2329,77 +2329,13 @@ ul.dropdown-menu li.menu-item-has-children > ul.dropdown-menu {
 }
 
 .bkg-img1 {
-    background-image: url('../images-web/pics/bkg-img1.jpg');  
+    background-image: url('../images-web/web/pics/bkg-img1.png');  
 }
+
 .bkg-img2 {
-    background-image: url('../images-web/pics/bkg-img2.jpg');  
+    background-image: url('../images-web/web/pics/bkg-img2.png');  
 }
-.bkg-img3 {
-    background-image: url('../images-web/pics/bkg-img3.jpg');  
-}
-.bkg-img4 {
-    background-image: url('../images-web/pics/bkg-img4.jpg');  
-}
-.bkg-img5 {
-    background-image: url('../images-web/pics/bkg-img5.jpg');  
-}
-.bkg-img6 {
-    background-image: url('../images-web/pics/bkg-img6.jpg');  
-}
-.bkg-img7 {
-    background-image: url('../images-web/pics/bkg-img7.jpg');  
-}
-.bkg-img8 {
-    background-image: url('../images-web/pics/bkg-img8.jpg');  
-}
-.bkg-img9 {
-    background-image: url('../images-web/pics/bkg-img9.jpg');  
-}
-.bkg-img10 {
-    background-image: url('../images-web/pics/bkg-img10.jpg');  
-}
-.bkg-img11 {
-    background-image: url('../images-web/pics/bkg-img11.jpg');  
-}
-.bkg-img12 {
-    background-image: url('../images-web/pics/bkg-img12.jpg');  
-}
-.bkg-img13 {
-    background-image: url('../images-web/pics/bkg-img13.jpg');  
-}
-.bkg-img14 {
-    background-image: url('../images-web/pics/bkg-img14.jpg');  
-}
-.bkg-img15 {
-    background-image: url('../images-web/pics/bkg-img15.jpg');  
-}
-.bkg-img16 {
-    background-image: url('../images-web/pics/bkg-img16.jpg');  
-}
-.bkg-img17 {
-    background-image: url('../images-web/pics/bkg-img17.jpg');  
-}
-.bkg-img18 {
-    background-image: url('../images-web/pics/bkg-img18.jpg');  
-}
-.bkg-img19 {
-    background-image: url('../images-web/pics/bkg-img19.jpg');  
-}
-.bkg-img20 {
-    background-image: url('../images-web/pics/bkg-img20.jpg');  
-}
-.bkg-img21 {
-    background-image: url('../images-web/pics/bkg-img21.jpg');  
-}
-.bkg-img22 {
-    background-image: url('../images-web/pics/bkg-img22.jpg');  
-}
-.bkg-img23 {
-    background-image: url('../images-web/pics/bkg-img23.jpg');  
-}
-.bkg-img24 {
-    background-image: url('../images-web/pics/bkg-img24.jpg');  
-}
+
 .footer-img-bkg-1 {
     background-image: url('../images-web/pics/footer-img-bkg-1.jpg');  
 }
@@ -2407,73 +2343,7 @@ ul.dropdown-menu li.menu-item-has-children > ul.dropdown-menu {
     background-image: url('../images-web/pics/footer-img-bkg-2.jpg');  
 }
 .custom-background.image-background.page-title-1 {
-    background-image: url('../images-web/page-titles/page-title-1.jpg');  
-}
-.custom-background.image-background.page-title-2 {
-    background-image: url('../images-web/page-titles/page-title-2.jpg');  
-}
-.custom-background.image-background.page-title-3 {
-    background-image: url('../images-web/page-titles/page-title-3.jpg');  
-}
-.custom-background.image-background.page-title-4 {
-    background-image: url('../images-web/page-titles/page-title-4.jpg');  
-}
-.custom-background.image-background.page-title-5 {
-    background-image: url('../images-web/page-titles/page-title-5.jpg');  
-}
-.custom-background.image-background.page-title-6 {
-    background-image: url('../images-web/page-titles/page-title-6.jpg');  
-}
-.custom-background.image-background.page-title-7 {
-    background-image: url('../images-web/page-titles/page-title-7.jpg');  
-}
-.custom-background.image-background.page-title-8 {
-    background-image: url('../images-web/page-titles/page-title-8.jpg');  
-}
-.custom-background.image-background.page-title-9 {
-    background-image: url('../images-web/page-titles/page-title-9.jpg');  
-}
-.custom-background.image-background.page-title-10 {
-    background-image: url('../images-web/page-titles/page-title-10.jpg');  
-}
-.custom-background.image-background.page-title-11 {
-    background-image: url('../images-web/page-titles/page-title-11.jpg');  
-}
-.custom-background.image-background.page-title-12 {
-    background-image: url('../images-web/page-titles/page-title-12.jpg');  
-}
-.custom-background.image-background.page-title-13 {
-    background-image: url('../images-web/page-titles/page-title-13.jpg');  
-}
-.custom-background.image-background.page-title-14 {
-    background-image: url('../images-web/page-titles/page-title-14.jpg');  
-}
-.custom-background.image-background.page-title-15 {
-    background-image: url('../images-web/page-titles/page-title-15.jpg');  
-}
-.custom-background.image-background.page-title-16 {
-    background-image: url('../images-web/page-titles/page-title-16.jpg');  
-}
-.custom-background.image-background.page-title-17 {
-    background-image: url('../images-web/page-titles/page-title-17.jpg');  
-}
-.custom-background.image-background.page-title-18 {
-    background-image: url('../images-web/page-titles/page-title-18.jpg');  
-}
-.custom-background.image-background.page-title-19 {
-    background-image: url('../images-web/page-titles/page-title-19.jpg');  
-}
-.custom-background.image-background.page-title-20 {
-    background-image: url('../images-web/page-titles/page-title-20.jpg');  
-}
-.custom-background.image-background.page-title-21 {
-    background-image: url('../images-web/page-titles/page-title-21.jpg');  
-}
-.custom-background.image-background.page-title-22 {
-    background-image: url('../images-web/page-titles/page-title-22.jpg');  
-}
-.custom-background.image-background.page-title-23 {
-    background-image: url('../images-web/page-titles/page-title-23.jpg');  
+    background-image: url('../images-web/web/slider/page-title-1.png');  
 }
 
 .page-content.custom-background {

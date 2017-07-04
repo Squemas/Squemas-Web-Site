@@ -68,7 +68,7 @@
                 </div>
             </header>
         </div>
-        <div class="page-content custom-background image-background dark page-title page-title-fullscreen page-title-10 page-title-centered mb-0">
+        <div class="page-content custom-background image-background dark page-title page-title-fullscreen page-title-1 page-title-centered mb-0">
             <div class="intro-hero-overlay"></div>
             <div class="page-title-container">
                 <div class="container">
@@ -167,7 +167,7 @@
         </div><!-- .page-content end -->
 
         <!-- .page-content start -->
-        <div class="page-content custom-background image-background dark bkg-img12">
+        <div class="page-content custom-background image-background dark bkg-img1">
             <div class="container">
                 <!-- .row start -->
                 <div class="row">
@@ -545,7 +545,7 @@
         </div>-->
 
         <!-- .page-content start -->
-        <div class="page-content custom-background image-background dark bkg-img13 pt-150 pb-150 centered">
+        <div class="page-content custom-background image-background dark bkg-img2 pt-150 pb-150 centered">
             <!-- .container start -->
             <div class="container">
                 <!-- .row start -->
@@ -626,8 +626,8 @@
                                 </div>
                                 <!-- .social-links start -->
                                 <ul class="social-links social-square-icons social-dark social-big align-left social-no-shadow natural-hover social-animated">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.facebook.com/squemasbolivia/" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/boliviasquemas/" class="instagram"><i class="fa fa-instagram"></i></a></li>
                                 </ul><!-- .social-links end -->
                             </li><!-- .widget end -->
                         </ul><!-- .footer-widget-container.col-md-3.col-sm-12 end -->
