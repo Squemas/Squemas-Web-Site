@@ -208,7 +208,7 @@
                         <li class="portfolio-item col-md-4 col-sm-6 col-xs-12">
                             <figure class="portfolio-item-container">
                                 <div class="block-image">
-                                    <img src="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>web/recepcion.jpg" alt="Instalaciones centro de negocios Squemas"/>
+                                    <img src="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>web/recepcion.png" alt="Instalaciones centro de negocios Squemas"/>
                                     <div class="mask"></div>
                                 </div>
                                 <figcaption>
@@ -223,7 +223,7 @@
                         <li class="portfolio-item col-md-4 col-sm-6 col-xs-12">
                             <figure class="portfolio-item-container">
                                 <div class="block-image">
-                                    <img src="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>web/oficinas.jpg" alt="Instalaciones centro de negocios Squemas"/>
+                                    <img src="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>web/oficinas.png" alt="Instalaciones centro de negocios Squemas"/>
                                     <div class="mask"></div>
                                 </div>
                                 <figcaption>
@@ -238,7 +238,7 @@
                         <li class="portfolio-item col-md-4 col-sm-6 col-xs-12">
                             <figure class="portfolio-item-container">
                                 <div class="block-image">
-                                    <img src="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>web/aula1.jpg" alt="Instalaciones centro de negocios Squemas"/>
+                                    <img src="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>web/aula1.png" alt="Instalaciones centro de negocios Squemas"/>
                                     <div class="mask"></div>
                                 </div>
                                 <figcaption>
@@ -253,7 +253,7 @@
                         <li class="portfolio-item col-md-4 col-sm-6 col-xs-12">
                             <figure class="portfolio-item-container">
                                 <div class="block-image">
-                                    <img src="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>web/aula2.jpg" alt="Instalaciones centro de negocios Squemas"/>
+                                    <img src="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>web/aula2.png" alt="Instalaciones centro de negocios Squemas"/>
                                     <div class="mask"></div>
                                 </div>
                                 <figcaption>
@@ -268,7 +268,7 @@
                         <li class="portfolio-item col-md-4 col-sm-6 col-xs-12">
                             <figure class="portfolio-item-container">
                                 <div class="block-image">
-                                    <img src="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>web/conferencias.jpg" alt="Instalaciones centro de negocios Squemas"/>
+                                    <img src="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>web/conferencias.png" alt="Instalaciones centro de negocios Squemas"/>
                                     <div class="mask"></div>
                                 </div>
                                 <figcaption>
@@ -283,7 +283,7 @@
                         <li class="portfolio-item col-md-4 col-sm-6 col-xs-12">
                             <figure class="portfolio-item-container">
                                 <div class="block-image">
-                                    <img src="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>web/reuniones.jpg" alt="Instalaciones centro de negocios Squemas"/>
+                                    <img src="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>web/reuniones.png" alt="Instalaciones centro de negocios Squemas"/>
                                     <div class="mask"></div>
                                 </div>
                                 <figcaption>
