@@ -7,6 +7,16 @@
         <meta name="author" content="">
         <meta name="keywords" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Open Graph data -->    
+        <meta property="og:title" content="Squemas Centro de Negocios"/>  
+        <meta property="og:type" content="Espacios de trabajo colaborativos"/>  
+        <meta property="og:url" content="<?Php echo BASE_VIEW_URL; ?>"/>  
+        <meta property="og:image" content="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>" />  
+        <meta property="og:site_name" content="Coworking Squemas"/>  
+        <!--<meta property="fb:admins" content="tu Id en Facebook"/>  -->
+        <meta property="og:description" content="Primer Centro de Negocios en su tipo, de la ciudad de La Paz, Bolivia. espacio empresarial y de trabajo colaborativo orientado a brindar todos los servicios de oficina, recepción y capacitación a estudiantes universitarios, emprendedores, profesionales independientes, freelancers y cualquier otra persona en busca de un lugar que impulse sus ideas y capacidades." />
+    
         <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,700%7CPlayfair+Display:400,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>        
         <link rel="shortcut icon" href="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>favicon.png"/>
         <link rel="stylesheet" href="<?Php echo $vParamsViewBootstrap['root_bootstrap_css']?>bootstrap.min.css"/>
