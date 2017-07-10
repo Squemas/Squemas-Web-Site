@@ -44,8 +44,6 @@ function convertToSVG() {
     });
 }
 
-
-
 /**
  * Runs on both load and resize
  */
@@ -549,6 +547,10 @@ var VolcannoInclude = {
      * @return data
      */
     contactFormAjax: function (id) {
+        
+        var globalURLSquemasConnection = 'http://www.squemas.com/';
+        //var globalURLSquemasConnection = 'http://localhost/www.squemas.com/';
+        
         // Show recaptcha on form click
         jQuery("form").on("click", function (event) {
             jQuery(".g-recaptcha", this).addClass("recaptcha-visible");
@@ -571,13 +573,13 @@ var VolcannoInclude = {
 
                     jQuery.ajax({
                         type: "POST",
-                        url: "contact.php",
+                        url: globalURLSquemasConnection + "contact/sendMail/",
                         cache: false,
                         contentType: false,
                         processData: false,
                         data: data
                     }).done(function (data) {
-                        if (data === "Message sent succesfully.") {
+                        /*if (data === "Mensaje fue enviado correctamente!.") {
                             inputFields.each(function (index, el) {
                                 jQuery(this).val("");
                             });
@@ -587,8 +589,14 @@ var VolcannoInclude = {
                             });
 
                             grecaptcha.reset();
+                        }*/
+                        if(data === "OK"){
+                            alert('El mensaje se envio correctamente!, gracias por comunicarte.');
+                            window.location = globalURLSquemasConnection;
+                        } else {
+                            alert('UPS! - Tuvimos un problema, serás direccionado a la página prinicpal, por favor vuelve a intentarlo, gracias.');
+                            window.location = globalURLSquemasConnection;
                         }
-                        alert(data);
                     });
                 });
                 break;

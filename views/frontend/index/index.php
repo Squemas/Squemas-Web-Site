@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
         <meta charset="utf-8">
         <title>Squemas Centro de Negocios</title>
         <meta name="description" content="">
@@ -18,7 +18,7 @@
         <meta property="og:description" content="Primer Centro de Negocios en su tipo, de la ciudad de La Paz, Bolivia. espacio empresarial y de trabajo colaborativo orientado a brindar todos los servicios de oficina, recepción y capacitación a estudiantes universitarios, emprendedores, profesionales independientes, freelancers y cualquier otra persona en busca de un lugar que impulse sus ideas y capacidades." />
     
         <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,700%7CPlayfair+Display:400,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>        
-        <link rel="shortcut icon" href="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>favicon.png"/>
+        <link rel="shortcut icon" href="<?Php echo $vParamsViewFrontEndLayout['root_frontend_img']?>favicon.ico"/>
         <link rel="stylesheet" href="<?Php echo $vParamsViewBootstrap['root_bootstrap_css']?>bootstrap.min.css"/>
         <link rel="stylesheet" href="<?Php echo $vParamsViewBootstrap['root_bootstrap_css']?>bootstrap-theme.min.css"/>
         <link rel="stylesheet" href="<?Php echo $vParamsViewFrontEndLayout['root_frontend_css']?>color-default.css"/>
@@ -68,6 +68,7 @@
                                                     </ul>
                                                 </li>
                                                 <li><a href="#instalaciones">Nuestras Instalaciones</a></li>
+                                                <li><a href="<?Php echo BASE_VIEW_URL;?>contact">Contacto</a>
                                             </ul>
                                         </div>
                                     </div>
