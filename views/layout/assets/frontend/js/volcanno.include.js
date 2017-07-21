@@ -548,8 +548,8 @@ var VolcannoInclude = {
      */
     contactFormAjax: function (id) {
         
-        var globalURLSquemasConnection = 'http://www.squemas.com/';
-        //var globalURLSquemasConnection = 'http://localhost/www.squemas.com/';
+        //var globalURLSquemasConnection = 'http://www.squemas.com/';
+        var globalURLSquemasConnection = 'http://localhost/www.squemas.com/';
         
         // Show recaptcha on form click
         jQuery("form").on("click", function (event) {
@@ -651,7 +651,7 @@ var VolcannoInclude = {
 
                     jQuery.ajax({
                         type: "POST",
-                        url: "contact.php",
+                        url: globalURLSquemasConnection + "contact/newsletter/",
                         cache: false,
                         contentType: false,
                         processData: false,

@@ -62,6 +62,10 @@ class contactController extends IdEnController
                                 echo $exito;
                             }
 					}
-			}	
+			}
+    
+        public function newsletter(){
+                echo 'Este es el newsletter';
+            }
 	}
 ?>
