@@ -594,8 +594,9 @@ var VolcannoInclude = {
                             alert('El mensaje se envio correctamente!, gracias por comunicarte.');
                             window.location = globalURLSquemasConnection;
                         } else {
-                            alert('UPS! - Tuvimos un problema, serás direccionado a la página prinicpal, por favor vuelve a intentarlo, gracias.');
-                            window.location = globalURLSquemasConnection;
+                            //alert('UPS! - Tuvimos un problema, serás direccionado a la página prinicpal, por favor vuelve a intentarlo, gracias.');
+                            alert(data);
+                            //window.location = globalURLSquemasConnection;
                         }
                     });
                 });
@@ -655,7 +656,10 @@ var VolcannoInclude = {
                         cache: false,
                         contentType: false,
                         processData: false,
-                        data: data
+                        data: data,
+                          beforeSend: function(xhr){
+                            alert('antes de enviar');
+                          }
                     }).done(function (data) {
                         if (data === "Message sent succesfully.") {
                             inputFields.each(function (index, el) {

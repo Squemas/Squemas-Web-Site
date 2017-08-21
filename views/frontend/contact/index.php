@@ -129,15 +129,15 @@
                                     <div class="contact-form">                                
                                         <form class="wpcf7">
                                             <div class="form-group">
-                                                <input name="name" type="text" class="wpcf7-text form-control" id="name" placeholder="Nombre Completo" >
+                                                <input name="name" id="name" type="text" class="wpcf7-text form-control" id="name" placeholder="Nombre Completo" >
                                             </div>
 
                                             <div class="form-group">
-                                                <input name="email" class="wpcf7-text form-control" type="email" id="email" placeholder="Correo Electrónico">
+                                                <input name="email" id="email" class="wpcf7-text form-control" type="email" id="email" placeholder="Correo Electrónico">
                                             </div>
 
                                             <div class="form-group wpcf7-message">
-                                                <textarea name="message"  class="wpcf7-textarea form-control" id="message" rows="8" placeholder="Cuentanos tus intereses"></textarea>
+                                                <textarea name="message" id="message"  class="wpcf7-textarea form-control" id="message" rows="8" placeholder="Cuentanos tus intereses"></textarea>
                                             </div>
 
                                             <input name="action" type="hidden">
