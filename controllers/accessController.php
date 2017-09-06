@@ -157,7 +157,7 @@ class accessController extends IdEnController
                                             if($exito){
                                                 $this->vMail->ClearAddresses();
                                                 //echo 'El usuario se registro correctamente; Las instrucciones de validación de cuenta se han enviado al correo a '.$vEmail.', gracias!';
-                                                echo $vFormProceed = 6
+                                                echo $vFormProceed = 6;
                                             } else {
                                                 //echo 'No se ha enviado el correo a '.$email;
                                                 echo $vFormProceed = 7;
