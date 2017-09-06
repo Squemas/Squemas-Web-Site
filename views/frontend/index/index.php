@@ -69,6 +69,7 @@
                                                 </li>
                                                 <li><a href="#instalaciones">Nuestras Instalaciones</a></li>
                                                 <li><a href="<?Php echo BASE_VIEW_URL;?>contact">Contacto</a>
+                                                <li><a href="<?Php echo BASE_VIEW_URL;?>access">Ingresar</a></li>
                                             </ul>
                                         </div>
                                     </div>
