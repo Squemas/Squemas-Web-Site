@@ -1,17 +1,7 @@
 "use strict";
-/*
- * PIXEL INDUSTRY INCLUDE FILE
- * 
- * Includes functions necessary for proper theme work and some helper functions.
- * 
- */
 
-
-/**
- * Function for converting to SVG
- * @param void
- * @return void
- */
+localStorage.setItem(globalURLSquemasConnection, 'http://localhost/www.squemas.com/');
+var globalURLSquemasConnection = localStorage.getItem(globalURLSquemasConnection);
 
 function convertToSVG() {
     jQuery('.icon-container img').each(function () {
@@ -548,8 +538,7 @@ var VolcannoInclude = {
      */
     contactFormAjax: function (id) {
         
-        //var globalURLSquemasConnection = 'http://www.squemas.com/';
-        var globalURLSquemasConnection = 'http://localhost/www.squemas.com/';
+    //var globalURLSquemasConnection = localStorage.getItem(globalURLSquemasConnection);
         
         // Show recaptcha on form click
         jQuery("form").on("click", function (event) {
@@ -573,7 +562,7 @@ var VolcannoInclude = {
 
                     jQuery.ajax({
                         type: "POST",
-                        url: globalURLSquemasConnection + "contact/sendMail/",
+                        url: globalURLSquemasConnectionConnection + "contact/sendMail/",
                         cache: false,
                         contentType: false,
                         processData: false,
@@ -592,11 +581,11 @@ var VolcannoInclude = {
                         }*/
                         if(data === "OK"){
                             alert('El mensaje se envio correctamente!, gracias por comunicarte.');
-                            window.location = globalURLSquemasConnection;
+                            window.location = globalURLSquemasConnectionConnection;
                         } else {
                             //alert('UPS! - Tuvimos un problema, serás direccionado a la página prinicpal, por favor vuelve a intentarlo, gracias.');
                             alert(data);
-                            //window.location = globalURLSquemasConnection;
+                            //window.location = globalURLSquemasConnectionConnection;
                         }
                     });
                 });
@@ -652,7 +641,7 @@ var VolcannoInclude = {
 
                     jQuery.ajax({
                         type: "POST",
-                        url: globalURLSquemasConnection + "contact/newsletter/",
+                        url: globalURLSquemasConnectionConnection + "contact/newsletter/",
                         cache: false,
                         contentType: false,
                         processData: false,
