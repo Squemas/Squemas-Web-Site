@@ -5,10 +5,13 @@ class contactController extends IdEnController
 		public function __construct()
 			{
 				parent::__construct();
+            
+                $this->vUsersData = $this->LoadModel('users');
 			}
         
 		public function index()
 			{
+                $this->vView->vUserNamesComplete = $this->vUsersData->getUserNamesComplete(IdEnSession::getSession(DEFAULT_USER_AUTHENTICATE.'Code'));
                 $this->vView->visualizar('index');
 				//$this->redireccionar('index');
 			}
@@ -33,9 +36,9 @@ class contactController extends IdEnController
                         $this->vMail = new PHPMailer();								
                         //$this->vMail->IsSMTP();
                         $this->vMail->SMTPAuth = true;
-                        $this->vMail->Host = '******';
-                        $this->vMail->Username = '******';
-                        $this->vMail->Password = '******';
+                        $this->vMail->Host = 'smtp.squemas.com';
+                        $this->vMail->Username = 'info@squemas.com';
+                        $this->vMail->Password = '@Squ3m4s';
                         $this->vMail->SMTPSecure = 'ssl';
                         $this->vMail->Port = 25;
                         $this->vMail->SetFrom($vEmail, strtoupper($vName));
@@ -49,9 +52,9 @@ class contactController extends IdEnController
                                 $vTextMessage2 = 'Gracias por comunicarte con nosotros,<br/><br/>Trataremos de atender tu consulta lo más raido posible, y nos pondermos en contacto contigo.<br/><br/>por favor te pedimos que no respondas a este correo. <br/><br/>Saludos';
                                 $this->vMail->ClearAddresses();
                                 $this->vMail->SMTPAuth = true;
-                                $this->vMail->Host = '******';
-                                $this->vMail->Username = '******';
-                                $this->vMail->Password = '******';
+                                $this->vMail->Host = 'smtp.squemas.com';
+                                $this->vMail->Username = 'info@squemas.com';
+                                $this->vMail->Password = '@Squ3m4s';
                                 $this->vMail->SMTPSecure = 'ssl';
                                 $this->vMail->Port = 25;
                                 $this->vMail->SetFrom('info@squemas.com', strtoupper('Contacto Centro Squemas'));

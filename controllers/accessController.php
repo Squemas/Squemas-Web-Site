@@ -75,7 +75,7 @@ class accessController extends IdEnController
         
 		public function LogoutMethod(){								
 				IdEnSession::sessionDestroy();
-				$this->redirect('access','index');
+				$this->redirect('index','index');
 			}      
     
 		public function register(){
@@ -121,6 +121,8 @@ class accessController extends IdEnController
                         $vFormProceed = 4;
                     } else if($vPassword != $vRePassword){
                         $vFormProceed = 5;
+                    } else if((strlen($vPassword) == 0) || (strlen($vRePassword) == 0)){
+                        $vFormProceed = 8;
                     }
                        
                     if($vFormProceed == 0){
@@ -136,32 +138,49 @@ class accessController extends IdEnController
                                     if(($vUserCode != 0) && ($UserNameCode != 0) && ($ProfileCode != 0)){
                                         //echo 'El usuario se registro correctamente!';
                                         
-                                            $vTextMessage = '<p>Sigue el siguiente enlace para confirmar tu correo electrónico <a href="'.BASE_VIEW_URL.'access/validateEmailAccount/'.$vEmail.'/'.$vUserActivationCode.'/'.$vState.'">Validar mi cuenta!</a></p>.';
+                                        
+                                        
+                                        if($this->vUsersData->getUserEmailExists($vEmail) == 1){
+                                            $vState = $this->vUsersData->getUserState($vEmail);
+                                            if($vState == 2){
+                                                $vUserActivationCode = $this->vUsersData->getUserActivationCode($vEmail);
 
-                                            $this->getLibrary('class.phpmailer');
-                                            $this->vMail = new PHPMailer();								
-                                            //$this->vMail->IsSMTP();
-                                            $this->vMail->SMTPAuth = true;
-                                            $this->vMail->Host = '********';
-                                            $this->vMail->Username = '********';
-                                            $this->vMail->Password = '********';
-                                            $this->vMail->SMTPSecure = 'ssl';
-                                            $this->vMail->Port = 25;
-                                            $this->vMail->SetFrom('informaciones@ideas-envision.com', 'Ideas-Envision Servicios Integrales');
-                                            $this->vMail->AddAddress(strtolower(trim($vEmail)));
-                                            $this->vMail->Subject = 'Validación de cuenta Ideas-Envision';
-                                            $this->vMail->MsgHTML($vTextMessage);											
+                                                $vTextMessage = '<p>Sigue el siguiente enlace para confirmar tu correo electrónico <a href="'.BASE_VIEW_URL.'access/validateEmailAccount/'.$vEmail.'/'.$vUserActivationCode.'/'.$vState.'">Validar mi cuenta!</a></p>.';
 
-                                            $exito = $this->vMail->Send();
+                                                $this->getLibrary('class.phpmailer');
+                                                $this->vMail = new PHPMailer();								
+                                                //$this->vMail->IsSMTP();
+                                                $this->vMail->SMTPAuth = true;
+                                                $this->vMail->Host = 'smtp.squemas.com';
+                                                $this->vMail->Username = 'info@squemas.com';
+                                                $this->vMail->Password = '@Squ3m4s';
+                                                $this->vMail->SMTPSecure = 'ssl';
+                                                $this->vMail->Port = 25;
+                                                $this->vMail->SetFrom('info@squemas.com', 'Coworking Squemas');
+                                                $this->vMail->AddAddress(strtolower(trim($vEmail)));
+                                                $this->vMail->Subject = 'Validación de cuenta Academia Squemas';
+                                                $this->vMail->MsgHTML($vTextMessage);											
 
-                                            if($exito){
-                                                $this->vMail->ClearAddresses();
-                                                //echo 'El usuario se registro correctamente; Las instrucciones de validación de cuenta se han enviado al correo a '.$vEmail.', gracias!';
-                                                echo $vFormProceed = 6;
+                                                $exito = $this->vMail->Send();
+
+                                                if($exito)
+                                                    {
+                                                         $this->vMail->ClearAddresses();
+                                                         echo $vFormProceed = 6;
+                                                         //echo 'true';
+                                                    }
+                                                else
+                                                    {
+                                                         //echo 'No se ha enviado el correo a '.$email;
+                                                        echo $vFormProceed = 7;
+                                                    }                                
+
+
                                             } else {
-                                                //echo 'No se ha enviado el correo a '.$email;
-                                                echo $vFormProceed = 7;
+                                                echo $vFormProceed = 9;
+                                                //echo 'La cuenta ya esta activada!, por favor inicie sesión.';
                                             }
+                                        }
                                     }
                                 }
                             }
@@ -201,14 +220,14 @@ class accessController extends IdEnController
                                 $this->vMail = new PHPMailer();								
                                 //$this->vMail->IsSMTP();
                                 $this->vMail->SMTPAuth = true;
-                                $this->vMail->Host = '**********';
-                                $this->vMail->Username = '***********';
-                                $this->vMail->Password = '***********';
+                                $this->vMail->Host = 'smtp.squemas.com';
+                                $this->vMail->Username = 'info@squemas.com';
+                                $this->vMail->Password = '@Squ3m4s';
                                 $this->vMail->SMTPSecure = 'ssl';
                                 $this->vMail->Port = 25;
-                                $this->vMail->SetFrom('informaciones@ideas-envision.com', 'Ideas-Envision Servicios Integrales');
+                                $this->vMail->SetFrom('info@squemas.com', 'Coworking Squemas');
                                 $this->vMail->AddAddress(strtolower(trim($vEmail)));
-                                $this->vMail->Subject = 'Validación de cuenta Ideas-Envision';
+                                $this->vMail->Subject = 'Validación de cuenta Academia Squemas';
                                 $this->vMail->MsgHTML($vTextMessage);											
 
                                 $exito = $this->vMail->Send();

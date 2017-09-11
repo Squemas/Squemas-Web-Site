@@ -1,6 +1,6 @@
 "use strict";
 
-localStorage.setItem(globalURLSquemasConnection, 'http://localhost/www.squemas.com/');
+localStorage.setItem(globalURLSquemasConnection, 'http://www.squemas.com/');
 var globalURLSquemasConnection = localStorage.getItem(globalURLSquemasConnection);
 
 function convertToSVG() {
@@ -538,7 +538,6 @@ var VolcannoInclude = {
      */
     contactFormAjax: function (id) {
         
-    //var globalURLSquemasConnection = localStorage.getItem(globalURLSquemasConnection);
         
         // Show recaptcha on form click
         jQuery("form").on("click", function (event) {
@@ -562,7 +561,7 @@ var VolcannoInclude = {
 
                     jQuery.ajax({
                         type: "POST",
-                        url: globalURLSquemasConnectionConnection + "contact/sendMail/",
+                        url: globalURLSquemasConnection + "contact/sendMail/",
                         cache: false,
                         contentType: false,
                         processData: false,
@@ -581,7 +580,7 @@ var VolcannoInclude = {
                         }*/
                         if(data === "OK"){
                             alert('El mensaje se envio correctamente!, gracias por comunicarte.');
-                            window.location = globalURLSquemasConnectionConnection;
+                            window.location = globalURLSquemasConnection;
                         } else {
                             //alert('UPS! - Tuvimos un problema, serás direccionado a la página prinicpal, por favor vuelve a intentarlo, gracias.');
                             alert(data);
@@ -641,7 +640,7 @@ var VolcannoInclude = {
 
                     jQuery.ajax({
                         type: "POST",
-                        url: globalURLSquemasConnectionConnection + "contact/newsletter/",
+                        url: globalURLSquemasConnection + "contact/newsletter/",
                         cache: false,
                         contentType: false,
                         processData: false,

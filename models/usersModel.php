@@ -91,7 +91,19 @@ class usersModel extends IdEnModel
                                                                 WHERE tb_squemas_users.c_email = '$vEmail';");
 				return $vResultUserActivationCode->fetchColumn();
 				$vResultUserActivationCode->close();
-			}        
+			}
+    
+		public function getUserState($vEmail)
+			{
+                $vEmail = (string) $vEmail;
+            
+				$vResultUserState = $this->vDataBase->query("SELECT
+                                                                tb_squemas_users.n_active
+                                                            FROM tb_squemas_users
+                                                                WHERE tb_squemas_users.c_email = '$vEmail';");
+				return $vResultUserState->fetchColumn();
+				$vResultUserState->close();
+			}    
     
 		public function getUser($vUserCode)
 			{

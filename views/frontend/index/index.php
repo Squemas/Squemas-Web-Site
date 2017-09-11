@@ -64,12 +64,23 @@
                                                 <li><a href="<?Php echo BASE_VIEW_URL;?>">Inicio</a></li>
                                                 <li><a href="#" class="dropdown">Sobre Nosotros</a>
                                                     <ul class="hamburger-nav-submenu">
-                                                        <li class="current-menu-item"><a href=#slide-to-section>Conózcanos</a></li>
+                                                        <li class="current-menu-item"><a href="#slide-to-section">Conózcanos</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="#instalaciones">Nuestras Instalaciones</a></li>
                                                 <li><a href="<?Php echo BASE_VIEW_URL;?>contact">Contacto</a>
-                                                <li><a href="<?Php echo BASE_VIEW_URL;?>access">Ingresar</a></li>
+                                                
+                                                <?Php
+                                                    if(IdEnSession::getSession(DEFAULT_USER_AUTHENTICATE) == true){
+                                                        echo '<li><a href="#" class="dropdown">'.$this->vUserNamesComplete.'</a>';
+                                                            echo '<ul class="hamburger-nav-submenu">';
+                                                                echo '<li class="current-menu-item"><a href="'.BASE_VIEW_URL.'access/LogoutMethod/">Salir</a></li>';
+                                                            echo '</ul>';
+                                                        echo '</li>';
+                                                    } else {
+                                                        echo '<li><a href="'.BASE_VIEW_URL.'access">Ingresar</a></li>';
+                                                    }
+                                                ?>
                                             </ul>
                                         </div>
                                     </div>
